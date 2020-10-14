@@ -1,0 +1,70 @@
+body {
+    background-color: rgb(37, 35, 35);
+}       
+/*Selectors
+Selectors grab elements from html doc to mamnipulate them
+    Element Selector
+        - You can select entire elements without any special characters       p {
+        - This applies to all of the elements with that tag on that page          color:red;
+        - It ranks on the bottom of the specificity scale.                    }
+    The class Selector
+        - This is used to celect elements within a specific class name        .className {
+        - Can be used on any and all elements within that class.                  color:blue;
+        - Can be used multiple times, and is select with the . symbol         }
+    The ID Selector
+        - This is used to select elements with a certain ID name.             #IdName {
+        - Can be sued on any and all elements with that id                       color:orange;
+        - Unlike classses, it can only be ised on one element at a time,      }
+          and is selected with the # symbol. However, it is possible to 
+          use more than once.
+*/
+
+/*Classes and ID*/
+
+.title {
+    color:red;
+}
+
+.subtitle1 {
+    color: aquamarine;
+}
+
+#Services {
+    color: greenyellow;
+}
+
+/*Specificity and When to use what Selectors*/
+
+h2 {
+    color:cyan
+}
+
+.comicsans {
+    font-family: cursive;
+}
+/* Since id and class are more specific  they take priority. Id has more priority than class.
+If you use style within the html file it will take the most priority. 
+
+-Headers
+-Class
+-ID
+-Inline Styling
+*/ 
+
+/* Classes should be used multiple times but conventionally the ID should only be used once
+but it still works with more than one */
+
+/*PseudoSelectors*/
+h1:hover {
+    color:cyan
+}
+li:first-child {
+    color: firebrick
+}
+li:nth-child(2) {
+    color: rgb(255, 110, 110)
+}
+li:last-child {
+    color: rgb(24, 167, 148)
+} 
+
